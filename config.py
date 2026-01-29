@@ -5,7 +5,7 @@ EXPERIMENT_ID = "voucher_ui_01"
 
 # Business assumptions
 BASELINE_REDEMPTION_RATE = 0.20        # 20%
-MDE_RELATIVE = 0.05                    # +5% relative uplift
+MDE_RELATIVE = 0.05                    # +5% uplift
 
 # Statistical parameters
 ALPHA = 0.05                           # significance level
