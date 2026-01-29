@@ -5,10 +5,7 @@ from scipy.stats import norm
 
 
 def calculate_sample_size(p_control, p_treatment, alpha=0.05, power=0.80):
-    """
-    Calculates required sample size per variant for a two-sided
-    two-proportion z-test.
-    """
+
     z_alpha = norm.ppf(1 - alpha / 2)
     z_beta = norm.ppf(power)
 
