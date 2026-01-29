@@ -1,7 +1,7 @@
 -- User-level experiment outcome table
 -- One row per user per experiment
 
-WITH experiment_users AS (
+WITH experiment_users AS ( --sampling table
     SELECT
         user_id,
         variant
@@ -16,7 +16,7 @@ exposed_users AS (
     FROM experiment_users eu
     JOIN events e
       ON eu.user_id = e.user_id
-    WHERE e.event_name = 'product_viewed'
+    WHERE e.event_name = 'voucher_viewed'
 ),
 
 user_redemptions AS (
@@ -36,3 +36,5 @@ user_redemptions AS (
 
 SELECT *
 FROM user_redemptions;
+
+
