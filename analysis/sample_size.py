@@ -22,3 +22,19 @@ def calculate_sample_size(p_control, p_treatment, alpha=0.05, power=0.80):
     denominator = (p_treatment - p_control) ** 2
 
     return math.ceil(numerator / denominator)
+
+# --------------------------------------------------
+# Optional: allow running this file as a script
+# --------------------------------------------------
+if __name__ == "__main__":
+    p_control = 0.20
+    p_treatment = 0.25
+
+    n = calculate_sample_size(
+        p_control=p_control,
+        p_treatment=p_treatment,
+        alpha=0.05,
+        power=0.80
+    )
+
+    print(f"Required sample size per variant: {n}")

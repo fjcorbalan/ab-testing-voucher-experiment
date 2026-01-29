@@ -13,15 +13,15 @@ Assess whether changes on APP yield improvements on Voucher Usage
 - Voucher redemption rate (user-level)
 
 **Baseline**
-- Historical redemption rate: 20%
+- Historical redemption rate: 20% 
 
 **Minimum Detectable Effect**
-- +5% relative uplift
+- +5% relative uplift (aiming to get to 25%)
 
 **Statistical Parameters**
 - Significance level (α): 0.05  
 - Power (1 − β): 0.80  
-- Required sample size: ~48,000 users per variant
+- Required sample size: ~1,094 users per variant
 
 ---
 

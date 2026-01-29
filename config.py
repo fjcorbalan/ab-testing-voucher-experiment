@@ -13,7 +13,9 @@ POWER = 0.80                           # statistical power
 
 # Derived values
 TARGET_REDEMPTION_RATE = (
-    BASELINE_REDEMPTION_RATE * (1 + MDE_RELATIVE)
+    BASELINE_REDEMPTION_RATE + MDE_RELATIVE
 )
 
-REQUIRED_SAMPLE_PER_VARIANT = 48_000
+# REQUIRED_SAMPLE_PER_VARIANT computed using
+# analysis/sample_size.py with alpha=0.05, power=0.80
+REQUIRED_SAMPLE_PER_VARIANT = 1094
