@@ -1,6 +1,8 @@
 -- User-level experiment outcome table
 -- One row per user per experiment
 
+CREATE OR REPLACE VIEW analytics.voucher_ui_01_outcomes AS
+
 WITH experiment_users AS ( --sampling table
     SELECT
         user_id,
@@ -37,4 +39,13 @@ user_redemptions AS (
 SELECT *
 FROM user_redemptions;
 
-
+--I am aggregating on analysis.metrics but I could also do it below
+/*
+SELECT
+  variant,
+  COUNT(*) AS users,
+  SUM(redeemed) AS redeemers,
+  AVG(redeemed) AS redemption_rate
+FROM user_redemptions
+GROUP BY 1;
+*/
