@@ -44,6 +44,8 @@ All metrics are computed at the **user level** to avoid event-level bias.
 - analysis/ # Sample size, metrics, and statistical tests
 - data/ # Data access utilities
 - notebooks/ # End-to-end experiment walkthrough
+- airflow/ #Adding airflow schedule as an example
 
+#
 
 
